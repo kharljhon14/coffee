@@ -1,0 +1,71 @@
+.hero {
+   display: flex;
+   align-items: center;
+   height: 95vh;
+   color: var(--color-text-primary);
+   padding: 0 10rem;
+   background-image: url("../../../public/images/background.jpg");
+   background-color: rgba(186, 178, 181, 05);
+   background-blend-mode: multiply;
+   background-size: cover;
+   background-position: center;
+
+   &__content {
+      display: flex;
+      flex: 0 0 50%;
+      height: 60rem;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-around;
+      @media only screen and (max-width: $bp-large) {
+         flex: 0 0 55%;
+      }
+
+      @media only screen and (max-width: $bp-500) {
+         flex: 1;
+      }
+
+
+      &-header {
+         display: flex;
+         flex-direction: column;
+
+         &-title {
+            font-size: 10rem;
+            font-weight: 600;
+            line-height: 1;
+            text-transform: uppercase;
+            margin-bottom: 3rem;
+
+            @media only screen and (max-width: $bp-medium-small) {
+               font-size: 8rem;
+            }
+
+            @media only screen and (max-width: $bp-small) {
+               font-size: 7rem;
+            }
+         }
+
+         &-description {
+            font-size: 1.7rem;
+            font-weight: 300;
+            line-height: 1.6;
+            @media only screen and (max-width: $bp-medium-small) {
+               font-size: 1.8rem;
+            }
+         }
+      }
+   }
+}
+
+.btn {
+   border: none;
+   border-radius: 3rem;
+   font-size: 1.7rem;
+   font-weight: 600;
+   text-transform: uppercase;
+   padding: 2rem 5rem;
+   background-color: var(--color-accent);
+   color: var(--color-primary-dark);
+   cursor: pointer;
+}

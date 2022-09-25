@@ -1,0 +1,73 @@
+.explore {
+   display: flex;
+   height: 90vh;
+   background-color: var(--color-primary-light);
+   padding: 5rem 4rem;
+
+   @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+   }
+
+   &__image {
+      flex: 50%;
+      background-image: url("../../../public//images/explore-2.jpg");
+      background-color: rgba(186, 178, 181, 05);
+      background-blend-mode: multiply;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      padding: 5rem;
+      color: var(--color-text-primary);
+      margin-right: 2rem;
+
+      @media only screen and (max-width: $bp-small) {
+         margin-right: 0;
+      }
+
+      &-title {
+         text-transform: uppercase;
+         font-size: 5rem;
+         font-weight: 600;
+         @media only screen and (max-width: $bp-small) {
+            font-size: 4rem;
+         }
+      }
+
+      &-sub {
+         font-size: 2rem;
+         font-weight: 300;
+         @media only screen and (max-width: $bp-small) {
+            font-size: 1.8rem;
+         }
+      }
+   }
+
+   &__description {
+      flex: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 5rem;
+      color: var(--color-primary-dark);
+
+      &-title {
+         font-size: 6rem;
+         text-transform: uppercase;
+         font-weight: 600;
+         margin-bottom: 2rem;
+         @media only screen and (max-width: $bp-small) {
+            font-size: 4rem;
+         }
+      }
+
+      &-sub {
+         font-size: 2rem;
+         font-weight: 300;
+         @media only screen and (max-width: $bp-small) {
+            font-size: 1.8rem;
+         }
+      }
+   }
+}

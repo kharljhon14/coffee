@@ -1,0 +1,55 @@
+:root {
+   --color-primary: #8a817c;
+   --color-primary-light: #bcb8b1;
+   --color-primary-dark: #463f3a;
+
+   --color-text-primary: #f4f3ee;
+
+   --color-accent: #e0afa0;
+}
+
+$bp-largest: 100em;
+$bp-large: 81.25em;
+$bp-medium-large: 75em;
+$bp-medium: 62.5em;
+$bp-medium-small: 56.25em;
+$bp-small: 50em;
+$bp-smallest: 37.5em;
+
+$bp-500: 31.25em;
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+}
+
+html {
+   box-sizing: border-box;
+   font-size: 62.5%;
+
+   @media only screen and (max-width: $bp-largest) {
+      font-size: 50%;
+   }
+
+   @media only screen and (max-width: $bp-large) {
+      font-size: 45%;
+   }
+
+   @media only screen and (max-width: $bp-medium-large) {
+      font-size: 44%;
+   }
+
+   @media only screen and (max-width: $bp-smallest) {
+      font-size: 40%;
+   }
+}
+
+body {
+   font-family: "Poppins", sans-serif;
+}
